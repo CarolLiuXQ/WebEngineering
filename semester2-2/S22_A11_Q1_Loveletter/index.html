@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./public/stylesheets/index.css" />
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+  <!-- boor-strap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+  <!-- Icon -->
+  <link rel="shortcut icon" href="./public/stylesheets/favicon.png" type="image/x-icon">
+  <title>Loveletter</title>
+</head>
+
+<body>
+
+  <!-- 在container設置背景 -->
+  <header id="background" style="
+        background-image: url('./public/stylesheets/wallpaper-darker.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 655px;
+      " class="d-flex flex-column justify-content-end">
+
+    <div class="header-warper ms-5 me-5">
+      <!-- nav-bar -->
+      <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="./index.html" class="logoWrap">
+            <img src="./public/stylesheets/logo_transparent_small.png" alt="logo" width="150" height="80" />
+          </a>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light me-4" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light me-4" href="./friendList.html">My Friends</a>
+              </li>
+            </ul>
+            <form class="d-flex" action="#anchor">
+              <input class="form-control me-3" type="search" placeholder="Name" aria-label="Search" id="searchInput">
+              <button class="btn btn-outline-light" type="submit" id="searchButton">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- 文字標題 -->
+      <div class="slogan d-flex flex-column justify-content-end">
+        <h1 class="d-flex align-items-center slogan-text">Meet the love of your life,</h1>
+        <h1 class="d-flex align-items-center mt-1 slogan-text">Bring the joy to your soul.</h1>
+      </div>
+      <div class="text-wrap header-text mt-3" style="width: 40rem;">
+        If you are seeking love and want an easy way to meet local singles,
+        Loveletter is the way to go.
+        Browse through below profiles of locals and decide who you want to send a
+        message that is based on interests and other information listed there.
+      </div>
+      <button type="button" class="btn btn-danger btn-lg sign-up-button" data-bs-toggle="modal"
+        data-bs-target="#signUpModal">Sign up</button>
+    </div>
+
+  </header>
+
+  <!-- 過度區的文字區 -->
+  <div class="transfer-part mb-3 mt-5">
+    <div id="anchor"></div>
+    <!-- transfer section -->
+    <section class="d-flex flex-column justify-content-center align-items-center transfer-section">
+      <h2 class="d-flex justify-content-center transfer-title">Start to Find Your Soul Mate</h2>
+      <img src="./public/stylesheets/decorative-line-cut.png" alt="decorative-line" style="width: 400px;" class="mt-3">
+      <div class="mt-3 text-wrap transfer-text" style="width: 40rem;">
+        We love bringing people together, if you want to get to know this person, just press puls button to add him/her
+        to your Friends List.
+      </div>
+    </section>
+
+
+    <!-- people list section -->
+    <section class="personListContainer m-5">
+      <div class="row" id="people-list-panel">
+        <!-- 用JS和API將人物list放進來 -->
+      </div>
+    </section>
+
+    <!-- pagination -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center mb-0" id="pagination">
+        <!-- JS會做出來 -->
+      </ul>
+    </nav>
+  </div>
+
+  <!-- footer -->
+  <footer style="background: rgb(32, 29, 49);" class="justify-content-end">
+    <a href="#" class="footerWraper mt-1">
+      <img src="./public/stylesheets/logo_transparent_small_changecolor.png" alt="logo" width="150" height="80" />
+    </a>
+    <p style="color: mintcream;" class="mt-2">©Copyright | Loveletter 2021. All Right Reserveds<br>
+  </footer>
+
+
+
+  <!-- modal for card -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" id="modal-content" style="background-color: floralwhite;">
+        <div class="modal-header">
+          <!-- JS會帶出 -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal for sign up -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form class="m-3">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- axios的設置 -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./index.js"></script>
+  <!-- bootstrap的設置 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

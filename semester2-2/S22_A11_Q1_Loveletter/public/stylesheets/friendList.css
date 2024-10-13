@@ -1,0 +1,36 @@
+.slogan{
+  font-family: 'Lora', serif;
+  min-height: 100px;
+  color:floralwhite;
+}
+.slogan-text{
+  font-size: 55px;
+}
+.sub-slogan{
+  min-height: 100px;
+}
+.header-text{
+  color: floralwhite;
+}
+.sign-up-button{
+  margin: 50px 50px 50px 0px;
+}
+#background{
+  max-width: 1920px;
+  max-height: 1080px;
+}
+img.avatar{
+  border-radius: 50%;
+}
+.img-button, #card-wrapper{
+  background-color: transparent;
+  border: none;
+}
+.age{
+  font-size: 14px;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,140 @@
+/* 變更slider的樣式-自己打的 */
+input[type="range"] {
+  height: 34px;
+  margin: 10px 0;
+  min-width: 100px;
+}
+/* 從http://danielstern.ca/range.css/#/中創造出類似題目的slider */
+input[type="range"] {
+  width: 100%;
+  margin: 6.95px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #c8c8c8;
+  border: 0.2px solid #010101;
+  border-radius: 24.7px;
+  width: 100%;
+  height: 5.1px;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  margin-top: -7.15px;
+  width: 19px;
+  height: 19px;
+  background: #ffffff;
+  border: 1.6px solid #c8c8c8;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #d5d5d5;
+}
+input[type="range"]::-moz-range-track {
+  background: #c8c8c8;
+  border: 0.2px solid #010101;
+  border-radius: 24.7px;
+  width: 100%;
+  height: 5.1px;
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 19px;
+  height: 19px;
+  background: #ffffff;
+  border: 1.6px solid #c8c8c8;
+  border-radius: 50px;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 7.55px 0;
+  color: transparent;
+  width: 100%;
+  height: 5.1px;
+  cursor: pointer;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #bbbbbb;
+  border: 0.2px solid #010101;
+  border-radius: 49.4px;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #c8c8c8;
+  border: 0.2px solid #010101;
+  border-radius: 49.4px;
+}
+input[type="range"]::-ms-thumb {
+  width: 19px;
+  height: 19px;
+  background: #ffffff;
+  border: 1.6px solid #c8c8c8;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #c8c8c8;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #d5d5d5;
+}
+
+/* slider以外的東西-自己打的 */
+container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+.Rpart,
+.Gpart,
+.Bpart {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: space-between;
+}
+.HEXnum {
+  background: rgba(255, 255, 255, 0.3);
+  width: 20%;
+  height: 55px;
+  border-radius: 2%;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Rsquare,
+.Gsquare,
+.Bsquare {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 10%;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+}
+.Rnum,
+.Gnum,
+.Bnum {
+  width: 60px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 5%;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+}

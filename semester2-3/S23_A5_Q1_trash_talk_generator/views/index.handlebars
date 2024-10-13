@@ -1,0 +1,64 @@
+<h1 class="d-flex justify-content-center m-4">你想對誰說幹話?</h1>
+
+<form action="/" method="POST">
+  <div class="row row-cols-3 m-5">
+    <div class="col">
+      <div class="card">
+        <label class="form-check-label" for="flexRadioDefault1">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+            class="card-img-top" alt="工程師">
+        </label>
+        <h5 class="d-flex justify-content-center align-items-center mt-2">
+          <input class="form-check-input mx-2" type="radio" name="radio" value="engineer" id="flexRadioDefault1"
+            {{#isEqual occupation "engineer" }}checked{{/isEqual}}>
+          <label class="form-check-label" for="flexRadioDefault1">
+            工程師
+          </label>
+        </h5>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <label class="form-check-label" for="flexRadioDefault2">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+            class="card-img-top" alt="設計師">
+        </label>
+        <h5 class="d-flex justify-content-center align-items-center mt-2">
+          <input class="form-check-input mx-2" type="radio" name="radio" value="designer" id="flexRadioDefault2"
+            {{#isEqual occupation "designer" }}checked{{/isEqual}}>
+          <label class="form-check-label" for="flexRadioDefault2">
+            設計師
+          </label>
+        </h5>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <label class="form-check-label" for="flexRadioDefault3">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+            class="card-img-top" alt="創業家">
+        </label>
+        <h5 class="d-flex justify-content-center align-items-center mt-2">
+          <input class="form-check-input mx-2" type="radio" name="radio" value="entrepreneur" id="flexRadioDefault3"
+            {{#isEqual occupation "entrepreneur" }}checked{{/isEqual}}>
+          <label class="form-check-label" for="flexRadioDefault3">
+            創業家
+          </label>
+        </h5>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="row row-cols-3 m-5 d-flex flex-row">
+    <div class="col-2">
+      <button type="submit" class="btn btn-outline-dark">產生幹話</button>
+    </div>
+    <textarea class="col-10" id="description" style="display: inline;">{{description}}</textarea>
+  </div>
+
+</form>

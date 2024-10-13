@@ -1,0 +1,16 @@
+{
+  "name": "s22_a12_q1_movielist_gridlist",
+  "version": "1.0.0",
+  "description": "AlphaCamp學期2-2，A12作業專案的MovieList_getGrid&List，  \r 使用 VS code 打造的電影清單。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

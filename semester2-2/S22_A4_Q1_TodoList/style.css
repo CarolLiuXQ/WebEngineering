@@ -1,0 +1,56 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.checked {
+  color: #ccc;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.fa {
+  margin: 0 5px;
+  color: #bbb;
+}
+
+.fa, label:hover {
+  cursor: pointer;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+li > label[for='todo'] {
+  flex-grow: 1;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+#my-todo, #my-done {
+  padding-left: 0;
+}
+
+.form-inline {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#newTodo {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.Todo {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}

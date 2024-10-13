@@ -1,0 +1,15 @@
+{
+  "name": "s22_a11_q1_loveletter",
+  "version": "1.0.0",
+  "description": "AlphaCamp學期2-2，A11作業專案的Loveletter，  \r 使用 VS code 打造的餐廳美食網站。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
